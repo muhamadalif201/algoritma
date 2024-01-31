@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan javascript</title>
+</head>
+<body>
+    <script>
+        // No1
+        let supri1 = 20;
+        let supri2 = 50;
+        let supri3 = 30;
+        
+        if(supri1>supri2 && supri1>supri3) {
+            console.log("angka satu terbesar")
+        } else if(supri2>supri1 && supri2>supri3) {
+            console.log("angka kedua yang terbesar")
+        } else if(supri3>supri1 && supri3>supri2) {
+            console.log("angka ketiga yang lebih besar")
+        }
+
+        //No2 
+        let angka = prompt("Silakan masukkan angka tidak nol:");
+
+        while (isNaN(angka) || angka === "0") {
+        angka = prompt("Masukkan inputan yang salah! Silakan masukkan angka tidak nol:");
+        }
+
+        let sign = angka >= 0 ? "positif" : "negatif";
+
+        let genapGanjil = angka % 2 === 0;
+
+        alert(`Angka ${angka} adalah ${sign} dan ${genapGanjil ? "genap" : "ganjil"}.`);
+
+
+        //no3
+        let lampu = 2;
+        if(lampu == 0) {
+            console.log("OFF")
+        } else if(lampu == 2) {
+            console.log("ON")
+        } else {
+            console.log("Masukan angka 1 atau 0")
+        }
+    
+    </script>
+</body>
+</html>
